@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
     <style>
-        body{
+       
+       
+       body{
 
             font-family: arial, helvetica, sans-serif;
 
@@ -17,6 +19,15 @@
             border-collapse:collapse;
 
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:10px;
+            background-color:lightgray;
+        }
+
+       
 
         td, th {
             border:1px solid black;
@@ -42,10 +53,11 @@
     <h1>o uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das unidades Federativas.</caption>
         <thead>
             <tr>
-              <th>estado</th>
-              <th>população</th>
+              <th scope="col">estado</th>
+              <th scope="col" style="width: 500px;">população</th>
               <th>% da população total</th>
 
             </tr>
@@ -199,7 +211,7 @@
 
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td><strong class="num">210.147.125</strong></td>
 
             </tr>
