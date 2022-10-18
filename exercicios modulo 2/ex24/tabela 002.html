@@ -7,7 +7,11 @@
     <title>tabelas</title>
     <style>
        
-       
+       *{
+        width: 1000px;
+       margin:auto;
+       }
+
        body{
 
             font-family: arial, helvetica, sans-serif;
@@ -17,6 +21,7 @@
         table { 
             width: 500px;
             border-collapse:collapse;
+            position:relative;
 
         }
 
@@ -26,7 +31,11 @@
             padding:10px;
             background-color:lightgray;
         }
-
+         
+        h1{
+            text-align:center;
+            padding:50px;
+        }
        
 
         td, th {
@@ -36,6 +45,10 @@
              
         }
 
+            tbody > tr:nth-child(2n) {
+                background-color: lightgray;
+            }
+
         td.num {
             text-align:right;
         }
@@ -44,6 +57,13 @@
             background-color:grey;
             color:white;
 
+        }
+
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: lightgray;
+           
         }
 
 
