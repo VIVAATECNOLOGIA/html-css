@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>exemplo de formulario usando javascript.</h1>
+    <form action="cadastro.php">
+
+<P>
+    <label for="iano">EM QUE ANO VOCÊ NASCEU???</label>
+    <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcidade()">
+</P>
+<p>
+    <label for="iidade">SUA IDADE É???</label>
+    <output id="iidade">0</output>
+
+
+</p>
+<p>
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="LIMPAR">
+</p>
+ </form>
+   
+   <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value) }
+
+    </script>
+</body>
+</html>
