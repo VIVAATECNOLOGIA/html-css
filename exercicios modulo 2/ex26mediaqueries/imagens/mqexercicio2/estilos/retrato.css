@@ -1,2 +1,6 @@
 @charset "utf-8";
 /* configurações aparelho em pé (portrait) */
+
+body {
+    background-color: green;
+}
